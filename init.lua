@@ -1,5 +1,5 @@
-groups = {}
-function getGroup(name)
+gt_groups = {}
+function gt_getGroup(name)
 	for k, v in pairs(groups) do
 		if groups[k].name == name then
 			return k
@@ -11,7 +11,7 @@ function getGroup(name)
 	end
 end
 
-Group = {
+gt_Group = {
 	name = "", owner = "",
 	members = {}, blocks = {},
 	
