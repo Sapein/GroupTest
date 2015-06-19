@@ -1,10 +1,10 @@
 gt_groups = {}
 function gt_getGroup(name)
-	for k, v in pairs(groups) do
-		if groups[k].name == name then
+	for k, v in pairs(gt_groups) do
+		if gt_groups[k].name == name then
 			return k
 		else 
-			if k >= #groups then
+			if k >= #gt_groups then
 				return false
 			end
 		end
@@ -19,7 +19,7 @@ gt_Group = {
 	
 	new = function()
 		local g = {}
-		for k, v in pairs(Group) do
+		for k, v in pairs(gt_Group) do
 			g[k] = v
 		end
 		return g
